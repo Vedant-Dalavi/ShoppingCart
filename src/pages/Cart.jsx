@@ -21,7 +21,7 @@ const Cart = () => {
             })}
           </div>
 
-          <div className="flex flex-col justify-between  ml-28">
+          <div className="flex flex-col justify-between  ml-28 sm:left-0">
             <div className="flex flex-col">
               <div className="uppercase  text-2xl text-green-700 font-semibold">
                 Your Cart
@@ -39,14 +39,14 @@ const Cart = () => {
                 Total Amount: ${totalAmount}
               </p>
 
-              <button className="w-full mt-3 items-center text-white text-2xl  h-10 rounded-md pt-5 pb-10 px-36 bg-green-700">
+              <button className="w-full mt-3 items-center text-white text-2xl  h-10 rounded-md pt-5 pb-12 px-36 bg-green-700">
                 Checkout Now
               </button>
             </div>
           </div>
         </div>
       ) : (
-        <div className="min-h-[80vh] flex flex-col items-center justify-center">
+        <div className="flex items-center justify-center mt-48 mx-auto">
           <div>
             <h1 className="text-gray-700 font-semibold text-xl mb-2">
               Your Cart is Empty!
